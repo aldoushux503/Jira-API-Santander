@@ -1,4 +1,4 @@
-# Jira-API-Santander
+# Jira-REST-API
 
 ## Overview
 
