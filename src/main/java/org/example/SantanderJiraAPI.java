@@ -7,7 +7,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.URL;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.stream.Collectors;
 
 public class SantanderJiraAPI {
@@ -15,13 +16,13 @@ public class SantanderJiraAPI {
         String jiraUrl = "https://gostoldos.atlassian.net";
         String projectKey = "SAN";
         String username = "gostoldos@gmail.com";
-        String apiToken = "ATATT3xFfGF0D-taTAiRvnhU5Mem8K9w9vEzWSH-NHtlErqJg3ag6X5Iiz7GUYsuwb9UPWUOfBJ6z2j4F-GPlSyeoDHtq-2t7ncf1IvNgjtG5abxV976H5WMsubslVxHPrYAtlrbjBXJQwi7p_7Cb-7Xko7D_YJm_w8GxLGcTjorBH7n1DDv_2k=481899B1";
+        String apiToken = "ATATT3xFfGF0T-qPBQ65kmi4Fbt4QVc3-QooybLhkPphujZrfhjC8GERWnA8CNGLxYAbzMt0MkWOe9M1Xbb25g2P3xVl95XQ1IwqmZXXduPVQIhfD71iv4-VsYgXanwZPPyg95Iptg0G8CYl3yx-Y3_oD6EO6uxlCW3KGSP0SW0-xUQjcI0Va-E=E3AC4E6B";
 
         try {
             // Creating an HTTP connection with Jira REST API
             String apiUrl = jiraUrl + "/rest/api/3/search?jql=project=" + projectKey;
-            URL url = new URL(apiUrl);
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            URI url = new URI(apiUrl);
+            HttpURLConnection connection = (HttpURLConnection) url.toURL().openConnection();
             connection.setRequestMethod("GET");
             connection.setRequestProperty("Authorization", getBasicAuth(username, apiToken));
 
@@ -50,7 +51,7 @@ public class SantanderJiraAPI {
             } else {
                 System.out.println("Error: " + statusCode);
             }
-        } catch (IOException e) {
+        } catch (IOException | URISyntaxException e) {
             e.printStackTrace();
         }
     }
