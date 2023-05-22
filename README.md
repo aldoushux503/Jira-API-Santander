@@ -19,12 +19,12 @@ To get started with this project, follow these steps:
 1. Clone the repository:
 
 ```shell
-git clone https://github.com/aldoushux503/Jira-API-Santander.git
+git clone https://github.com/aldoushux503/Jira-REST-API.git
 ```
 2. Navigate to the project directory:
 
 ```shell
-cd Jira-API-Santander
+cd Jira-REST-API
 ```
 
 3. Сhange the properties to your own in the main file:
