@@ -16,7 +16,7 @@ public class SantanderJiraAPI {
         String jiraUrl = "https://gostoldos.atlassian.net";
         String projectKey = "SAN";
         String username = "gostoldos@gmail.com";
-        String apiToken = "ATATT3xFfGF0T-qPBQ65kmi4Fbt4QVc3-QooybLhkPphujZrfhjC8GERWnA8CNGLxYAbzMt0MkWOe9M1Xbb25g2P3xVl95XQ1IwqmZXXduPVQIhfD71iv4-VsYgXanwZPPyg95Iptg0G8CYl3yx-Y3_oD6EO6uxlCW3KGSP0SW0-xUQjcI0Va-E=E3AC4E6B";
+        String apiToken = "ATATT3xFfGF0wb9_jzauYUMOW4kuVAoHdRSBMh0iEuBVhGSz4lJSC5KE-4qh0Kdrl3W-FEmMreU8UVh0M4895A4SWmAakIZTJvCcDSNuKgKx9YObnhOwqmQ5lpT7NDZMPXNeHwlYWduZ7xUBIZAC0MK-bMm0xKeA2hbvZZuyIayijAOogS1Kt3I=E1A10287";
 
         try {
             // Creating an HTTP connection with Jira REST API
