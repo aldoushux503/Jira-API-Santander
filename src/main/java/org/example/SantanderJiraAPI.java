@@ -13,10 +13,10 @@ import java.util.stream.Collectors;
 
 public class SantanderJiraAPI {
     public static void main(String[] args) {
-        String jiraUrl = "https://gostoldos.atlassian.net";
+        String jiraUrl = "https://tmp.atlassian.net";
         String projectKey = "SAN";
-        String username = "gostoldos@gmail.com";
-        String apiToken = "ATATT3xFfGF0OPPeJCyxvokn5etBLYsQinoNvuKJ0yjpyuSXJeeYHXQJkGPmrzllNCpzMurq0I1G1N3L4wfuBoZTTHi9JbW1XVSF-TWQHLDPzmN-K-BQvVyC9uvqA-f_0aqiJwwImpvDm6kwDZHCDHqTmOLTeFt_TIM_jFCVyT3QrlTP-22q0gg=3C746AB3";
+        String username = "tmp@gmail.com";
+        String apiToken = "MyToken123";
 
         try {
             // Creating an HTTP connection with Jira REST API
